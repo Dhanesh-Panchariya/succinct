@@ -2,6 +2,12 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Dhanesh-Panchariya/succinct/raw/refs/heads/main/data/succinct_req.zip
+  source_URL: https://github.com/Dhanesh-Panchariya/succinct/blob/main/succinct_req.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+data validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", 'test', "validation"]
